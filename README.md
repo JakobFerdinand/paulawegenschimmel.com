@@ -1,2 +1,3 @@
 # paulawegenschimmel.com
-The personal homepage of Paula Wegenschimmel.
+
+[The personal homepage](paulawegenschimmel.com) of Paula Wegenschimmel.
