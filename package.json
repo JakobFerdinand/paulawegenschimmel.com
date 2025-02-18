@@ -4,8 +4,8 @@
   "description": "[The personal homepage](https://paulawegenschimmel.com) of Paula Wegenschimmel.",
   "main": "index.js",
   "scripts": {
-    "dev:css": "npx tailwindcss -i ./src/app.src.css -o ./dist/css/app.css --watch",
-    "build:css": "npx tailwindcss -i ./src/app.src.css -o ./dist/css/app.css --minify"
+    "dev:css": "npx @tailwindcss/cli -i ./src/app.src.css -o ./dist/css/app.css --watch",
+    "build:css": "npx @tailwindcss/cli -i ./src/app.src.css -o ./dist/css/app.css --minify"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jakobferdinand/paulawegenschimmel.com/issues"
   },
-  "homepage": "https://github.com/jakobferdinand/paulawegenschimmel.com#readme"
+  "homepage": "https://github.com/jakobferdinand/paulawegenschimmel.com#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.6"
+  }
 }
