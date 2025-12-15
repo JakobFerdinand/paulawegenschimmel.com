@@ -4,6 +4,7 @@
   "description": "[The personal homepage](https://paulawegenschimmel.com) of Paula Wegenschimmel.",
   "main": "index.js",
   "scripts": {
+    "start": "live-server --port=8080 --open=./dist --watch=./dist",
     "dev:css": "npx @tailwindcss/cli -i ./src/app.src.css -o ./dist/css/app.css --watch",
     "build:css": "npx @tailwindcss/cli -i ./src/app.src.css -o ./dist/css/app.css --minify"
   },
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/jakobferdinand/paulawegenschimmel.com#readme",
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.18"
+    "@tailwindcss/cli": "^4.1.18",
+    "live-server": "^1.2.2"
   }
 }
