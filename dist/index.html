@@ -4,39 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Under Construction</title>
+    <title>Paula Wegenschimmel</title>
     <link rel="stylesheet" href="css/app.css">
     <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚧</text></svg>">
-
-    <script>
-        const theme = localStorage.getItem('theme');
-        if (theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-        }
-        
-        function toggleTheme() {
-            const isDarkMode = document.documentElement.classList.toggle('dark');
-            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-        }
-    </script>
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
 </head>
 
-<body class="flex justify-center items-center min-h-screen m-4 font-sans bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 transition-colors duration-300">
-    <button
-        class="absolute top-7 right-7 bg-gray-800 dark:bg-gray-500 p-2 rounded-lg"
-        onclick="toggleTheme()">
-        <span class="block dark:hidden">🌙</span>
-        <span class="hidden dark:block">☀️</span>
-    </button>
+<body class="bg-stone-50 text-stone-900 antialiased">
+    <div class="grid grid-cols-1 min-h-screen border-r border-stone-900" style="grid-template-columns: 1fr 80px;">
+        <!-- Main Content -->
+        <div class="grid grid-rows-[auto_1fr_auto] border-r border-stone-900">
+            <!-- Header -->
+            <div class="px-15 py-10 border-b border-stone-900 flex items-center">
+                <span class="text-xs font-normal tracking-wider uppercase">Portfolio</span>
+            </div>
 
-    <div class="text-center">
-        <h1 class="text-4xl mb-8">Paula Wegenschimmel</h1>
-        <p class="text-lg mb-8">I am currently working at <span class="font-bold">Pamapama</span></p>
-        <a href="https://www.pamapama.com/" 
-           class="inline-block bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300">
-            Visit us as Pamapama
-        </a>
+            <!-- Hero Section -->
+            <div class="px-15 py-20 flex flex-col justify-center">
+                <h1 class="text-8xl font-light leading-tight mb-10 tracking-tight">
+                    Paula<br>Wegenschimmel
+                </h1>
+                <h2 class="text-4xl font-light leading-snug mb-5 tracking-tight">
+                    Currently working<br>at Pamapama
+                </h2>
+                <p class="text-base leading-relaxed text-stone-600 mb-15">
+                    Designer & Creative
+                </p>
+            </div>
+
+            <!-- Footer -->
+            <div class="px-15 py-10 border-t border-stone-900 flex flex-col gap-5">
+                <a href="https://www.pamapama.com/" 
+                   class="inline-block text-xs font-normal tracking-wider uppercase border border-stone-900 px-4 py-2.5 w-fit transition-all hover:bg-stone-900 hover:text-stone-50">
+                    Visit Pamapama
+                </a>
+                <div class="text-xs text-stone-500 tracking-wider uppercase leading-relaxed">
+                    Salzburg, Austria<br>
+                    2025
+                </div>
+            </div>
+        </div>
+
+        <!-- Side Rail -->
+        <div class="border-l border-stone-900 flex items-center justify-center px-5 py-10 relative">
+            <div class="text-xs font-normal tracking-widest uppercase" style="writing-mode: vertical-rl; transform: rotate(180deg);">
+                Pamapama Studio
+            </div>
+        </div>
     </div>
 </body>
 
