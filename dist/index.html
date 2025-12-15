@@ -10,45 +10,35 @@
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
 </head>
 
-<body class="bg-stone-50 text-stone-900 antialiased">
-    <div class="grid grid-cols-1 min-h-screen border-r border-stone-900" style="grid-template-columns: 1fr 80px;">
-        <!-- Main Content -->
-        <div class="grid grid-rows-[auto_1fr_auto] border-r border-stone-900">
-            <!-- Header -->
-            <div class="px-15 py-10 border-b border-stone-900 flex items-center">
-                <span class="text-xs font-normal tracking-wider uppercase">Portfolio</span>
-            </div>
-
-            <!-- Hero Section -->
-            <div class="px-15 py-20 flex flex-col justify-center">
-                <h1 class="text-8xl font-light leading-tight mb-10 tracking-tight">
-                    Paula<br>Wegenschimmel
-                </h1>
-                <h2 class="text-4xl font-light leading-snug mb-5 tracking-tight">
-                    Currently working<br>at Pamapama
-                </h2>
-                <p class="text-base leading-relaxed text-stone-600 mb-15">
-                    Designer & Creative
-                </p>
-            </div>
-
-            <!-- Footer -->
-            <div class="px-15 py-10 border-t border-stone-900 flex flex-col gap-5">
-                <a href="https://www.pamapama.com/" 
-                   class="inline-block text-xs font-normal tracking-wider uppercase border border-stone-900 px-4 py-2.5 w-fit transition-all hover:bg-stone-900 hover:text-stone-50">
-                    Visit Pamapama
-                </a>
-                <div class="text-xs text-stone-500 tracking-wider uppercase leading-relaxed">
-                    Salzburg, Austria<br>
-                    2025
-                </div>
-            </div>
+<body class="bg-purple-100 text-blue-700 antialiased font-sans">
+    <div class="min-h-screen flex flex-col p-6 sm:p-8 md:p-16 lg:p-20">
+        <!-- Brand Label -->
+        <div class="mb-12 md:mb-20">
+            <span class="text-xs md:text-sm font-normal tracking-tight">
+                ［Paula Wegenschimmel］
+            </span>
         </div>
 
-        <!-- Side Rail -->
-        <div class="border-l border-stone-900 flex items-center justify-center px-5 py-10 relative">
-            <div class="text-xs font-normal tracking-widest uppercase" style="writing-mode: vertical-rl; transform: rotate(180deg);">
-                Pamapama Studio
+        <!-- Hero Section -->
+        <div class="flex-1 flex flex-col justify-center mb-12 md:mb-20">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-snug md:leading-tight tracking-tight max-w-3xl">
+                I am working at Pamapama
+            </h1>
+        </div>
+
+        <!-- Footer Contact Block -->
+        <div class="mt-auto flex items-baseline gap-12 lg:gap-20">
+            <!-- Address -->
+            <div class="text-xs md:text-sm leading-relaxed">
+                <span>Salzburg, Austria</span>
+            </div>
+
+            <!-- Visit Button -->
+            <div class="md:ml-auto">
+                <a href="https://www.pamapama.com/" 
+                   class="inline-block text-xs md:text-sm border border-blue-700 px-4 py-2 hover:bg-blue-700 hover:text-purple-100 transition-colors">
+                    Visit Pamapama
+                </a>
             </div>
         </div>
     </div>
