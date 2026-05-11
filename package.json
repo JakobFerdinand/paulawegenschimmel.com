@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/jakobferdinand/paulawegenschimmel.com#readme",
   "dependencies": {
-    "@tailwindcss/cli": "^4.2.2",
+    "@tailwindcss/cli": "^4.3.0",
     "live-server": "^1.2.2"
   }
 }
